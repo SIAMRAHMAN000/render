@@ -13,11 +13,11 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 # 创建非 root 用户
-ARG USER=appuser
+ARG USER=httpsiam
 ARG UID=1000
 ARG GID=1000
-ARG USER_PASSWORD=userpassword
-ARG ROOT_PASSWORD=Aa.cbbdft123
+ARG USER_PASSWORD=httpsiamxd
+ARG ROOT_PASSWORD=httpsiamxd
 
 # 安装常用工具、Shellinabox、SSH 服务器和 FTP 服务器，设置语言环境，清理缓存
 RUN apt-get update && apt-get install -y --no-install-recommends \
